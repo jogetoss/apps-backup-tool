@@ -1,0 +1,94 @@
+[{
+    "title" : "@@org.joget.marketplace.appbackup.config@@",
+    "properties" : [
+       
+        {
+            "label" : "@@org.joget.marketplace.appbackup.setting@@",
+            "type" : "header"
+        },
+        {
+            "name":"toBackup",
+            "label":"@@org.joget.marketplace.appbackup.toBackup@@",
+            "type":"selectbox",
+            "required":"True",
+            "options":[
+               {
+                 "value": "",
+                 "label": ""
+               },   
+               {
+                 "value":"ALL",
+                 "label":"@@org.joget.marketplace.appbackup.allApps@@"
+               },
+               {
+                 "value":"SELECTED",
+                 "label":"@@org.joget.marketplace.appbackup.selectedApps@@"
+               }
+            ]
+        },
+        
+        {
+            "name" : "unpublished",
+            "label" : "@@org.joget.marketplace.appbackup.unpublished@@",
+            "type" : "checkbox",
+            "value" : "false",
+            "options" : [{
+                "value" : "true",
+                "label" : ""
+            }],
+            "control_field":"toBackup",
+            "control_value":"ALL"
+        },
+        
+        {
+            "name":"selectedApp",
+            "label":"@@org.joget.marketplace.appbackup.selectedApp@@",
+            "type":"MultiSelect",
+            "required":"True",
+            "control_field":"toBackup",
+            "control_value":"SELECTED",    
+            "options_ajax": "[CONTEXT_PATH]/web/json/plugin/org.joget.marketplace.AppBackupTool/service"
+        },
+         
+        {
+            "name": "backupPath",
+            "label": "@@org.joget.marketplace.appbackup.backupPath@@",
+            "type": "textfield",
+            "required": "True"
+        },
+        
+        {
+            "name" : "appData",
+            "label" : "@@org.joget.marketplace.appbackup.appData@@",
+            "type" : "checkbox",
+            "value" : "false",
+            "options" : [{
+                "value" : "true",
+                "label" : ""
+            }]
+        },
+        
+        {
+            "name" : "appPlugins",
+            "label" : "@@org.joget.marketplace.appbackup.appPlugins@@",
+            "type" : "checkbox",
+            "value" : "false",
+            "options" : [{
+                "value" : "true",
+                "label" : ""
+            }]
+        },
+        
+        {
+            "name" : "appGroups",
+            "label" : "@@org.joget.marketplace.appbackup.appGroups@@",
+            "type" : "checkbox",
+            "value" : "false",
+            "options" : [{
+                "value" : "true",
+                "label" : ""
+            }]
+        }
+    ]
+}]
+

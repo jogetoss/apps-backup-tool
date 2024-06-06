@@ -1,6 +1,6 @@
 # Description
 
-This repository is meant to serve as a general template for how to set up new repositories in the JogetOSS organization. 
+This plugin facilitates comprehensive app backups, including app data, plugins and user groups. Supporting both published and unpublished apps. Ideal to use with a scheduler plugin for automated daily or scheduled backups.
 
 # Getting Help
 
