@@ -2,6 +2,9 @@
 
 This plugin facilitates comprehensive app backups, including app data, plugins and user groups. Supporting both published and unpublished apps. Ideal to use with a scheduler plugin for automated daily or scheduled backups.
 
+To setup and configure this plugin, please see the [documentation](https://dev.joget.org/community/display/SANDBOX2/Apps+Backup+Tool).
+
+
 # Getting Help
 
 JogetOSS is a community-led team for open source software related to the [Joget](https://www.joget.org) no-code/low-code application platform.
